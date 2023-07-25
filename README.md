@@ -1,4 +1,4 @@
-# [[%Asset@name%]]
+# Cognitive Cloud Open Development Platform
 [[%%Abstract%]]
 <br>
 
