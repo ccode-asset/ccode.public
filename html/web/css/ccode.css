@@ -1,0 +1,594 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: "Old English";
+    src: url("../fonts/OLDENGL.TTF");
+}
+
+@font-face {
+    font-family: "Arial Black";
+    src: url("../fonts/ARIBLK.TTF");
+}
+
+@font-face {
+    font-family: "Arial Rounded MT Bold";
+    src: url("../fonts/ARLRDBD.TTF");
+}
+
+@font-face {
+    font-family: "Tahoma";
+    src: url("../fonts/TAHOMA.TTF");
+}
+
+@font-face {
+    font-family: "Copperplate Gothic Bold";
+    src: url("../fonts/COPRGTB.TTF");
+}
+
+body.page {
+	min-height: 100vh;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	margin-top: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	top: 0;
+}
+
+section.panthers-grad {
+	display: flex;
+    background: linear-gradient(to right, #002341 0%, #868DDB 100%);
+    height:400px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 30px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 96%;
+  height: 67px;
+}
+
+
+nav {
+	background-color: rgba(255, 255, 255, 0.5);
+	box-shadow: 3px 3px 5px rgba(0,0,0,0.5);
+	padding-right: 50px;
+}
+
+nav ul {
+	width: 100%;
+	list-style: none;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+nav li {
+	height: 50px;
+}
+
+nav a {
+	height: 100%;
+	padding: 0 30px;
+	text-decoration: none;
+	display: flex;
+	align-items: center;
+	color: black;
+}
+nav a:hover {
+	background-color: #f0f0f0;
+}
+
+nav li:first-child {
+	margin-right: auto;
+}
+
+.sidebar {
+	position: fixed;
+	top: 0px;
+	right: 0px;
+	height: 100vh;
+	width: 250px;
+	z-index: 999;
+	background-color: rgba(255, 255, 255, 0.5);
+	backdrop-filter: blur(10px);
+	box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+	display: none;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: flex-start;
+}
+
+.sidebar li {
+	width: 100%;
+}
+
+.sidebar a {
+	width: 100%;
+}
+
+.menu-button {
+	display: none;
+}
+
+@media(max-width: 1200px) {
+}
+
+@media(max-width: 800px) {
+	.hideOnMobile {
+		display: none;
+	}
+	
+	.menu-button {
+		display: block;
+	}
+	
+	.sidebar {
+		display: flex;
+	}
+}
+
+@media(max-width: 400px) {
+	.sidebar {
+		width: 100%;
+	}
+}
+
+/*
+	Definitions for Page Header with large landing page banner
+*/
+section.page-header {
+	height: 100%;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+div.page-header {
+	height: 100vh;
+	display: flex;
+	align-items: flex-start;
+	padding-top: 5%;
+}
+
+div.page-header img {
+	width: 10vw;
+	display: flex;
+	padding-left: 20px;
+}
+
+div.page-header-body {
+	padding-top: 0px;
+	flex-grow: 8;
+	flex-wrap: wrap;
+}
+
+ul.page-header-body {
+	list-style: none;
+	flex-direction: column;
+}
+
+h1.page-header {
+	font-family: "Arial Rounded MT Bold";
+	font-size: 5vw;
+	color: white;
+	padding-left: 20px;
+}
+
+
+ul.button-container {
+	width: 75vw;
+	list-style: none;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: flex-start;
+	flex-wrap: wrap;
+	padding-left: 20px;
+}
+
+li.button {
+	padding: 10px 10px 10px 10px;
+	border-width: 1px;
+	border-style: solid;
+	border-color: white;
+	margin-right: 15px;
+	margin-bottom: 15px;
+}
+li.button:hover {
+	background-color: #b2b2b2;
+}
+
+a.button {
+	color: white;
+	text-decoration: none;
+}
+
+font.button {
+	font-family: "Arial Black";
+	font-size: 8;
+	color: white;
+	
+}
+
+span.page-header-text {
+	width: 60vw;
+	color: white;
+}
+
+
+/*
+	Profile Carousel Section definitions
+*/
+
+section.carousel {
+	display: flex;
+	justify-content: center;
+	margin-top: 50px;
+	padding-top: 50px;
+	padding-bottom: 100px;
+	
+}
+
+div.carousel {
+	display: flex;
+	align-items: flex-start;
+	padding-top: 30px;
+	width: 95vw;
+	
+	flex-direction: column;
+	align-items: flex-start;
+}
+
+h2.line {
+   width: 95vw; 
+   text-align: left;
+   padding-left: 5vw;
+   border-bottom: 1px solid #0070C0; 
+   line-height: 0.1em;
+   margin: 10px 0 20px; 
+} 
+
+h2.line span { 
+    background:#fff; 
+    padding:0 10px;
+    color: #0070C0;
+}
+
+
+ul.carousel-header {
+	list-style: none;
+	flex-direction: column;
+	color: #002341;
+	width: 20%;
+	
+	justify-content: center;
+}
+
+ul.carousel-card-container {
+	padding-right: 50px;
+	width: inherit;
+	
+	list-style: none;
+	display: flex;
+	flex-direction: row;
+	align-items: stretch;
+    justify-content: flex-start;
+    
+    padding-left: 20px;
+    height: 100%;
+    
+	flex-wrap: wrap;
+	gap: 50px;
+}
+
+ul.carousel-card {
+	background-color: rgba(255, 255, 255, 0.5);
+	box-shadow: 3px 3px 5px rgba(0,0,0,0.5);
+	list-style: none;
+	display: flex;
+	flex-direction: column;
+	
+	padding-top: 20px;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-bottom: 30px;
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-bottom: 20px;
+	width: 275px;
+}
+
+ul.carousel-card:hover {
+	background-color: #F5F5F5;
+}
+
+/*
+	Profile Carousel Slider definitions
+*/
+
+
+ul.carousel-slider {
+	list-style: none;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	padding-left: 20px;
+}
+
+ul.carousel-slider-header {
+	width: 390px;
+	list-style: none;
+	flex-direction: column;
+	color: #002341;
+	text-align: center;
+}
+
+li.carousel-nav {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+button.carousel-nav {
+	width:45px;
+	height:45px;
+	background: none;
+	border: 2px solid #e7e7e7;
+	text-align:center;
+	font:20px/45px FontAwesome;
+	color:#7F7F7F;
+	z-index:5;
+}
+button.carousel-nav:hover {
+	background-color: #7F7F7F;
+	color: #FFF;
+}
+
+/*
+	2-column Carousel Card definitions
+*/
+ul.carousel-2-col-card {
+	background-color: rgba(255, 255, 255, 0.5);
+	box-shadow: 3px 3px 5px rgba(0,0,0,0.5);
+	list-style: none;
+	display: flex;
+	flex-direction: column;
+	
+	padding-top: 0px;
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-bottom: 30px;
+	
+	margin-left: 10px;
+	margin-right: 10px;
+	
+	width: 35vw;
+	height: 100%;
+	min-width: 350px;
+}
+
+ul.carousel-2-col-card:hover {
+	background-color: #c0c0c0;
+}
+
+ul.carousel-2-col-card a {
+	text-decoration: none;
+	color: #000000;
+}
+
+h3.carousel-2-col-card {
+	padding-top: 20px;
+	padding-left: 40px;
+	padding-right: 40px;
+	padding-bottom: 10px;
+	font-size: 30pt;
+	font-family: "Tahoma";
+}
+
+p.carousel-2-col-card {
+	padding-top: 0px;
+	padding-left: 40px;
+	padding-right: 40px;
+	padding-bottom: 10px;
+	font-size: 16pt;
+}
+
+/*
+	3-column Carousel Card definitions
+*/
+ul.carousel-3-col-card {
+	background-color: rgba(255, 255, 255, 0.5);
+	box-shadow: 3px 3px 5px rgba(0,0,0,0.5);
+	list-style: none;
+	display: flex;
+	flex-direction: column;
+	
+	padding-top: 0px;
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-bottom: 30px;
+	
+	margin-left: 10px;
+	margin-right: 10px;
+	
+	width: 25vw;
+	height: 100%;
+	min-width: 350px
+}
+
+ul.carousel-3-col-card:hover {
+	background-color: #c0c0c0;
+}
+
+ul.carousel-3-col-card a {
+	text-decoration: none;
+	color: #000000;
+}
+
+h3.carousel-3-col-card {
+	padding-top: 20px;
+	padding-left: 40px;
+	padding-right: 40px;
+	padding-bottom: 10px;
+	font-size: 30pt;
+	font-family: "Tahoma";
+}
+
+p.carousel-3-col-card {
+	padding-top: 0px;
+	padding-left: 40px;
+	padding-right: 40px;
+	padding-bottom: 10px;
+	font-size: 16pt;
+}
+
+/*
+	Footer Section definitions
+*/
+
+section.footer {
+	display: flex;
+	justify-content: center;
+	margin-top: 50px;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	background-color: #000000;
+	color: #ffffff;
+}
+
+div.footer {
+	display: flex;
+	align-items: flex-start;
+	padding-top: 30px;
+	width: 80vw;
+	
+	flex-direction: column;
+	align-items: flex-start;
+}
+
+ul.footer-container {
+	padding-right: 50px;
+	width: 80vw;
+	
+	list-style: none;
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+    justify-content: center;
+    padding-left: 20px;
+    
+    height: 100%;
+    
+	flex-wrap: wrap;
+}
+
+ul.footer-card {
+	list-style: none;
+	display: flex;
+	flex-direction: column;
+	
+	padding-top: 0px;
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-bottom: 20px;
+	
+	width: 25vw;
+	height: 100%;
+	min-width: 350px
+}
+
+h3.footer {
+	font-family: "Copperplate Gothic Bold";
+	font-size: 16pt;
+	color: white;
+}
+
+p.footer {
+	font-size: 10pt;
+	padding-right: 175px;
+	color: white;
+}
+
+/*
+ul.footer-card-center {
+	list-style: none;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	
+	padding-top: 0px;
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-bottom: 20px;
+	
+	width: 25vw;
+	height: 100%;
+	min-width: 350px
+}
+
+h3.footer-center {
+	font-family: "Copperplate Gothic Bold";
+	font-size: 12pt;
+	color: gray;
+}
+
+p.footer-center {
+	font-size: 10pt;
+	padding-right: 175px;
+	width: 100%;
+	text-align: center;
+}
+
+ul.footer-card-right {
+	list-style: none;
+	display: flex;
+	flex-direction: column;
+	align-items: right;
+	justify-content: right;
+	
+	padding-top: 0px;
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-bottom: 20px;
+	
+	width: 25vw;
+	height: 100%;
+	min-width: 350px
+}
+
+h3.footer-right {
+	font-family: "Copperplate Gothic Bold";
+	font-size: 12pt;
+	color: gray;
+	width: 100%;
+	text-align: right;
+}
+
+p.footer-right {
+	font-size: 10pt;
+	padding-right: 175px;
+	width: 100%;
+	text-align: center;
+}
+*/
+
+
+
