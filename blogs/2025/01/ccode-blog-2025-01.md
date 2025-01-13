@@ -1,5 +1,5 @@
 # Open Development Blog - Jan 2025
-by Diptam Mukherjee, Student, Techno International, Kolkata
+by Diptam Mukhopadhyay, Student @ Techno International New Town
 
 There is no doubt about how LLMs have transformed the way we work. Their applications are vast, ranging from customer support to creative writing. Their capability to generate human-like texts has made them invaluable in modern technology. This left us wondering whether we can incorporate their capabilities into our work process. And, the answer was yes we can. To manage and communicate effectively with our community we use Discord as the platform for communication. We also have a bot to manage the roles and onboarding of new members. The initial idea is to create an agentic discord bot that will be able to help the server members with common issues they face when they start contributing with us.
 
