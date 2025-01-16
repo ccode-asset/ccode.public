@@ -5,7 +5,7 @@ Open Development Platform business conduct guidelines focuses on upholding the p
 We are guided by the process outlined here:<br>
 [Open Development Model](https://open-development.org/collab/model/)
 
-[Privacy Policy]()
+[Privacy Policy](https://github.com/ccode-asset/ccode.public/blob/master/legal/privacy-policy.pdf)
 
 
 ## Our Pledge
