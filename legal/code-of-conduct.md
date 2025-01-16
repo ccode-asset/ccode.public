@@ -2,8 +2,10 @@
 
 Open Development Platform business conduct guidelines focuses on upholding the principles of transparency, inclusivity, and community collaboration, ensuring proper attribution to original code, adhering to chosen open source licenses, and maintaining a respectful and constructive environment for contributors, while also considering legal and ethical implications when developing and distributing open source software.
 
-We are guided by the process outlined here:
-https://open-development.org/collab/model/
+We are guided by the process outlined here:<br>
+[Open Development Model](https://open-development.org/collab/model/)
+
+[Privacy Policy]()
 
 
 ## Our Pledge
