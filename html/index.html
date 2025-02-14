@@ -9,7 +9,6 @@
 		<script type="text/javascript" src="web/js/slideshow.js"></script>
 	</head>
 	<body class="page">
-		<section class="page-header" style="background-image: url('web/images/ccode-splash.png');">
 			<nav class="sidebar">
 				<ul class="sidebar">
 					<li onclick="hideSidebar()">
@@ -28,14 +27,14 @@
 					<li><a href="new/News.html">News</a></li>
 				</ul>
 			</nav>
-			<nav id="navbar">
+			<nav id="navbar" class="sticky">
 				<ul >
 					<li><a href="inex.html">Open Development</a></li>
 					<li class="hideOnMobile"><a href="About.html">About</a></li>
 					<li class="hideOnMobile"><a href="asset/Assets.html">Assets</a></li>
 					<li class="hideOnMobile"><a href="event/Events.html">Events</a></li>
 					<li class="hideOnMobile"><a href="collab/Collab.html">Collaborations</a></li>
-					<li class="hideOnMobile"><a href="new/News.html">News</a></li>
+					<li class="hideOnMobile"><a href="new/News.html" style="padding-right: 50px;">News</a></li>
 					<li class="menu-button" onclick=showSidebar()>
 						<a href="#">
 							<svg	xmlns="http://www.w3.org/2000/svg" 
@@ -48,6 +47,7 @@
 				</ul>
 			</nav>
 			
+		<section class="page-header" style="background-image: url('web/images/ccode-splash.png');">
 			<div class="page-header">
 				<ul class="page-header-body">
 					<li>
@@ -254,7 +254,22 @@
 					<li>
 						<ul class="footer-card">
 							<li><h3 class="footer" style="font-size: 12pt; color: gray;">CONTACT</h3></li>
-							<li></li>
+							<li>
+								<ul class="social">
+									<li class="social">
+										<a class="social" href="mailto:ccode.adm@gmail.com">
+											<img class="social" src="web/icons/Mail.png" alt="Mail"/>
+											<font class="social">Mail</font></a></li>
+									<li class="social">
+										<a class="social" href="https://www.linkedin.com/company/91360319/admin/dashboard/">
+											<img class="social" src="web/icons/LinkedIn.png" alt="Linked In"/>
+											<font class="social">Linked In</font></a></li>
+									<li class="social">
+										<a class="social" href="https://www.youtube.com/@open-development">
+											<img class="social" src="web/icons/YouTube.png" alt="YouTube"/>
+											<font class="social">YouTube</font></a></li>
+								</ul>
+							</li>
 						</ul>
 					</li>
 				</ul>
