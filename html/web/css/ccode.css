@@ -146,9 +146,17 @@ nav li:first-child {
 
 /*
 	Definitions for Page Header with large landing page banner
+	And Hero banner
 */
 section.page-header {
 	height: 100%;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+section.page-hero {
+	height: 300px;
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -226,6 +234,49 @@ span.page-header-text {
 	color: white;
 }
 
+
+
+/*
+	Page Menu Section definitions
+*/
+
+section.page-menu {
+	height: 100px;
+	background-color: #f0f0f0;
+}
+
+
+ul.page-menu {
+	list-style: none;
+	display: flex;
+	flex-direction: row;
+	padding-top: 20px;
+}
+
+li.page-menu {
+	margin-right: 50px;	
+}
+
+h1.page-menu {
+	font-family: "Arial";
+	font-size: 16pt;
+	color: #656565;
+	padding-left: 20px;
+	padding-bottom:5px;
+}
+
+h3.page-menu {
+	font-family: "Arial";
+	font-size: 10pt;
+	color: #656565;
+	padding-left: 20px;
+	
+	
+}
+
+a.page-menu {
+	color: #656565;
+}
 
 /*
 	Profile Carousel Section definitions
